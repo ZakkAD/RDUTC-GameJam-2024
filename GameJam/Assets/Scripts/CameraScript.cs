@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,11 @@ public class CameraScript : MonoBehaviour
 	new Camera cam;
     public float smoothSpeed = 0.125f;
     public Vector3 offset;
+
+
+    public PlayerController player1Script;
+    public PlayerController player2Script;
+
 
     private Transform target;
 
@@ -40,6 +46,9 @@ public class CameraScript : MonoBehaviour
         // Switch target to player 1 when 'K' is pressed
         if (Input.GetKeyDown(KeyCode.K))
         {
+            Console.WriteLine("K pressed");
+            player1Script.beingControlled = true;
+            player2Script.beingControlled = false;
             target = player1;
             FlipCamera(false);
         }
@@ -47,6 +56,9 @@ public class CameraScript : MonoBehaviour
         // Switch target to player 2 when 'L' is pressed
         if (Input.GetKeyDown(KeyCode.L))
         {
+            Console.WriteLine("K pressed");
+            player2Script.beingControlled = true;
+            player1Script.beingControlled = false;
             target = player2;
             FlipCamera(true);
         }
