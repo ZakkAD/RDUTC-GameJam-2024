@@ -352,8 +352,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38d7ed867d7eac64ebf97ee1a4c78426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1: {fileID: 546383444}
-  player2: {fileID: 639166747}
 --- !u!1 &546383439
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,7 +367,7 @@ GameObject:
   - component: {fileID: 546383444}
   m_Layer: 0
   m_Name: playerA
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -515,7 +513,7 @@ GameObject:
   - component: {fileID: 639166747}
   m_Layer: 0
   m_Name: playerB
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
