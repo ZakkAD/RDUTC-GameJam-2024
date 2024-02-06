@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 301670469}
   - component: {fileID: 301670468}
-  - component: {fileID: 301670467}
+  - component: {fileID: 301670470}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -141,19 +141,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &301670467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301670466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf55f9bcbdd178b4586d515d2982b586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: 0
 --- !u!212 &301670468
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -221,6 +208,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &301670470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301670466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf55f9bcbdd178b4586d515d2982b586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  moveSpeed: 0
+  doorUp: {fileID: 0}
+  doorDown: {fileID: 0}
+  button: 0
 --- !u!1 &796260835
 GameObject:
   m_ObjectHideFlags: 0
