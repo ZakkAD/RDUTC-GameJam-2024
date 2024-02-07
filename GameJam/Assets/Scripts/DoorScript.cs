@@ -4,23 +4,32 @@ using UnityEngine;
 
 public class DoorScript : MonoBehaviour
 {
-    public GameObject door;
+    
     public float moveSpeed;
-    public Transform doorUp;
-    public Transform doorDown;
-    public bool button;
+    private Vector3 doorUp;
+    private Vector3 doorDown;
+    public float heightIncrease;
+    public buttonScript button;
+
+    void Start(){
+
+        doorUp = gameObject.transform.position;
+        doorUp.y += heightIncrease;
+        doorDown = gameObject.transform.position;
+
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (button == false)
+        if (button.value == false)
         {
-            door.transform.position = Vector3.MoveTowards(door.transform.position, doorDown.transform.position, Time.deltaTime * moveSpeed);
+            gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, doorDown, Time.deltaTime * moveSpeed);
         }
 
-        if (button == true)
+        if (button.value == true)
         {
-            door.transform.position = Vector3.MoveTowards(door.transform.position, doorUp.transform.position, Time.deltaTime * moveSpeed);
+            gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, doorUp, Time.deltaTime * moveSpeed);
         }
     }
 }
