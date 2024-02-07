@@ -44,7 +44,7 @@ public class CameraScript : MonoBehaviour
     void Update()
     {
         // Switch target to player 1 when 'K' is pressed
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             Console.WriteLine("K pressed");
             player1Script.beingControlled = true;
@@ -54,7 +54,7 @@ public class CameraScript : MonoBehaviour
         }
 
         // Switch target to player 2 when 'L' is pressed
-        if (Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             Console.WriteLine("K pressed");
             player2Script.beingControlled = true;

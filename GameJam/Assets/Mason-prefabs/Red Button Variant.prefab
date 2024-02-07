@@ -12,6 +12,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2476657190101533288, guid: 63286e974f9ed924ab225229cc033077, type: 3}
+      propertyPath: m_LocalScale.y
+      value: -0.285
+      objectReference: {fileID: 0}
+    - target: {fileID: 2476657190101533288, guid: 63286e974f9ed924ab225229cc033077, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.099
       objectReference: {fileID: 0}
@@ -53,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2476657190101533293, guid: 63286e974f9ed924ab225229cc033077, type: 3}
       propertyPath: m_Name
-      value: Red Button
+      value: Red Button Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7442202872710703423, guid: 63286e974f9ed924ab225229cc033077, type: 3}
       propertyPath: m_Color.b
