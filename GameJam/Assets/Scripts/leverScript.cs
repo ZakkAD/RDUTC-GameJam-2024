@@ -6,10 +6,14 @@ public class leverScript : MonoBehaviour
 {
     public bool value;
 
+    public Sprite newSprite;
+
+    private SpriteRenderer spriteRenderer;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -24,6 +28,11 @@ public class leverScript : MonoBehaviour
         {
             print($"Triggered: {value}");
             FlipValue();
+
+            if (newSprite != null)
+            {
+                spriteRenderer.sprite = newSprite;
+            }
         }
     }
 
