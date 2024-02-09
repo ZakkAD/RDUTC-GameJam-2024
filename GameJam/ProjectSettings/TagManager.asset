@@ -44,3 +44,6 @@ TagManager:
   - name: button
     uniqueID: 2906234483
     locked: 0
+  - name: Player
+    uniqueID: 3145741043
+    locked: 0

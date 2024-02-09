@@ -28,6 +28,15 @@ public class PlayerController : MonoBehaviour
 
         if(beingControlled){
         // Move the player horizontally
+            if (Input.GetAxisRaw("Horizontal") > 0) { 
+        
+                gameObject.transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+
+            }
+            else
+            {
+                gameObject.transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+            }
             float moveInput = Input.GetAxisRaw("Horizontal");
             rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
 
